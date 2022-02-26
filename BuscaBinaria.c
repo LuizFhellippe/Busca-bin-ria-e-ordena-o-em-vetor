@@ -47,11 +47,11 @@ int Buscar(int vet[], int number, int inicio, int fim){
             if(number < vet[meio]){
                 return Buscar(vet, number, inicio, meio - 1);
             }else{
-                return Buscar(vet, number, inicio, meio + 1);
+                return Buscar(vet, number, meio + 1, fim);
             }
         }
-        return -1;
     }
+    return -1;
 }
 
 int main(){
